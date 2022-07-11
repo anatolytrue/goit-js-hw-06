@@ -12,3 +12,20 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+
+const galleryEl = ({ url, alt }) =>
+  `<li><img class="style-img" src="${url}" alt="${alt}"></li>`;
+
+
+
+const imagesList = images.map(galleryEl).join('🐾');
+
+
+const imagesEl = document.querySelector('.gallery');
+imagesEl.classList.add('ul-style')
+imagesEl.insertAdjacentHTML("afterbegin", imagesList);
+
+console.log(imagesEl)
+
+
