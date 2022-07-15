@@ -19,7 +19,7 @@ const galleryEl = ({ url, alt }) =>
 
 
 
-const imagesList = images.map(galleryEl).join('🐾');
+const imagesList = images.map(galleryEl).join(' ');
 
 
 const imagesEl = document.querySelector('.gallery');
